@@ -2,12 +2,11 @@
   "name": "monza",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://magistrkim.github.io/monza/",
+  "homepage": "https://magistrkim.github.io/monza/src/",
   "type": "module",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /monza/",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build src/*.html --public-url /monza/"
   },
   "repository": {
     "type": "git",
