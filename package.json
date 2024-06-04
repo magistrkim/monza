@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /jsm-rental/"
+    "build": "parcel build src/*.html --dist-dir dist"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
