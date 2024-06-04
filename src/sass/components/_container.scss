@@ -1,16 +1,19 @@
 .container {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 60px;
 
   // Tablet screen
   @media screen and (min-width: 768px) {
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 80px;
   }
 
   // Desktop screen
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1180px) {
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 100px;
   }
 }
