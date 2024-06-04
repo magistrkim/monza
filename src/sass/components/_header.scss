@@ -1,4 +1,41 @@
-.container {
-    width: 1440px;
-    padding: 80px;
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+.header-container {
+  @extend .container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: $mainBgColor;
+}
+.link {
+  width: 140px;
+  height: 35px;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  gap: 40px;
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  gap: 40px;
+}
+.item:hover,
+.item:focus {
+  color: $accentColor;
+}
+.socials {
+  display: flex;
+  gap: 24px;
+  color: $mainBgColor;
+}
+.socials:hover,
+.socials:focus {
+  fill: $accentColor;
 }
