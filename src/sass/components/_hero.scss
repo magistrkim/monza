@@ -1,7 +1,15 @@
 .hero {
   position: relative;
   min-height: 688px;
-  background-image: url('../assets/images/hero.jpg');
+  background-image: url('../assets/images/hero-sm.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../assets/images/hero-md.jpg');
+  }
+  
+  @media screen and (min-width: 1040px) {
+    background-image: url('../assets/images/hero.jpg');
+  }
 }
