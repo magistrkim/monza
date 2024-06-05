@@ -13,3 +13,42 @@
     background-image: url('../assets/images/hero.jpg');
   }
 }
+.hero-container {
+  @extend .container;
+  padding-top: 120px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 190px;
+  }
+}
+.hero-title {
+  font-family: $mainFont;
+  font-size: 40px;
+  font-weight: 500;
+  color: $mainBgColor;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 50px;
+    font-weight: 700;
+  }
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+}
+.text {
+  max-width: 295px;
+  color: $mainBgColor;
+}

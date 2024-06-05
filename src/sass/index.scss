@@ -2,6 +2,7 @@
 
 // utils styles
 @import './utils/variables';
+@import './utils/visually-hidden';
 
 // base styles
 @import './base/base';
@@ -12,4 +13,7 @@
 @import './components/header';
 @import './components/hero';
 @import './components/offers';
+@import './components/subscribe';
+@import './components/questions';
+@import './components/footer';
 
