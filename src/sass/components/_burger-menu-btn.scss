@@ -1,0 +1,31 @@
+.menu-btn {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  padding: 0;
+
+  background-color: transparent;
+  color: $mainBgColor;
+  stroke: currentColor;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    transition: color $transitionTime $transitionCubic;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  fill: $mainBgColor;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    transition: fill $transitionTime $transitionCubic;
+  }
+}
+

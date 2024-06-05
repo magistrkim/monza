@@ -1,0 +1,59 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  background: $mobileBgColor;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.mobile-link {
+  color: $mainBgColor;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    transition: color $transitionTime $transitionCubic;
+  }
+}
+.mobile-socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.socials-icon {
+  fill: $mainBgColor;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    transition: fill $transitionTime $transitionCubic;
+  }
+}

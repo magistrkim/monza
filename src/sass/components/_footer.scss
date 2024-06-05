@@ -27,11 +27,17 @@
 .nav {
   display: flex;
 }
-.nav-list {
+.footer-list {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
-.nav-link {
+.footer-link {
   color: $mainBgColor;
   font-weight: 500;
   cursor: pointer;
