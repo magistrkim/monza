@@ -2,9 +2,6 @@
   position: absolute;
   width: 100%;
   z-index: 50;
-  @media screen and (min-width: 768px) {
-    position: fixed;
-  }
 }
 .header-container {
   @extend .container;
@@ -28,22 +25,27 @@
   display: flex;
   gap: 40px;
 }
-.nav-item {
+.nav-link {
   color: $mainBgColor;
   font-weight: 500;
   cursor: pointer;
-}
-.nav-item:hover,
-.nav-item:focus {
-  color: $accentColor;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    transition: color $transitionTime $transitionCubic;
+  }
 }
 .socials {
   display: flex;
   align-items: center;
   gap: 24px;
-  fill: $mainBgColor;
 }
-.socials-item:hover,
-.socials-item:focus {
-  fill: $accentColor;
+.socials-icon {
+  fill: $mainBgColor;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    transition: fill $transitionTime $transitionCubic;
+  }
 }

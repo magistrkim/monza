@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 688px;
+  height: 680px;
   background-image: url('../assets/images/hero-sm.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +19,7 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 190px;
+    padding-bottom: 150px;
   }
 }
 .hero-title {
@@ -51,4 +52,22 @@
 .text {
   max-width: 295px;
   color: $mainBgColor;
+}
+.hero-button {
+  color: $mainBgColor;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 14px 90px;
+  background-color: transparent;
+  border: 2px solid $mainBgColor;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $mainBgColor;
+    color: $mainTextColor;
+    transition: background-color $transitionTime $transitionCubic,
+      color $transitionTime $transitionCubic;
+  }
 }
