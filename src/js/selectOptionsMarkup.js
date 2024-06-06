@@ -1,5 +1,13 @@
 import { fetchData } from './fetchData';
 
+$(document).ready(function () {
+  $('.select').each(function () {
+    $(this).select2({
+      allowClear: true,
+    });
+  });
+});
+
 const populateSelect = (selectElement, data, key) => {
   while (selectElement.options.length > 1) {
     selectElement.remove(1);

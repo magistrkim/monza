@@ -1,7 +1,14 @@
 .offer-container {
   @extend .container;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    @media screen and (min-width: 1140px) {
+      padding-top: 100px;
+    }
+  }
 }
 .offers-title {
   text-align: center;
@@ -19,53 +26,6 @@
     font-size: 50px;
     margin-bottom: 80px;
   }
-}
-.select-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding-bottom: 24px;
-
-  @media screen and (min-width: 1140px) {
-    flex-wrap: nowrap;
-  }
-}
-.select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  width: 170px;
-  height: 48px;
-  font-size: 15px;
-  border: 1px solid $borderColor;
-  border-radius: 15px;
-  padding: 14px;
-}
-
-.select::after {
-  content: '▼';
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  background-color: $titleColor;
-}
-
-.select::-webkit-scrollbar {
-  width: 12px;
-}
-
-.select::-webkit-scrollbar-thumb {
-  background: $mobileBgColor;
-  border-radius: 10px;
-}
-
-.select::-webkit-scrollbar-thumb:hover {
-  background: $titleColor;
 }
 
 .offers-btn {
