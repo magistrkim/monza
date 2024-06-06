@@ -1,11 +1,7 @@
 .offer-container {
   @extend .container;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 100px;
-  align-items: center;
-  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
 }
 .offers-title {
   text-align: center;
@@ -19,8 +15,44 @@
     font-size: 40px;
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1140px) {
     font-size: 50px;
     margin-bottom: 80px;
   }
+}
+.select-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1140px) {
+    flex-wrap: nowrap;
+  }
+}
+.select {
+  width: 170px;
+  height: 48px;
+  border: 1px solid $borderColor;
+  border-radius: 15px;
+}
+.offers-btn {
+  width: 290px;
+  height: 48px;
+  border: 1px solid $borderColor;
+  border-radius: 15px;
+}
+.car-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+.car-wrapper {
+  width: 295;
+  min-height: 370px;
+  background-color: $mainBgColor;
 }
