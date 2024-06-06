@@ -55,10 +55,13 @@
 .select2-results__option {
   padding: 16px;
 }
+
 .select2-results__options {
-    list-style: none; /* Remove default list-style */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    background-color: transparent; /* Remove default background color */
-    border: none; /* Remove default border */
+  color: $mainTextColor;
+  -ms-overflow-style: none;
 }
+.select2-results__options::-webkit-scrollbar {
+  display: none;
+  color: $mainTextColor;
+}
+
