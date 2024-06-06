@@ -33,11 +33,41 @@
   }
 }
 .select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
   width: 170px;
   height: 48px;
+  font-size: 15px;
   border: 1px solid $borderColor;
   border-radius: 15px;
+  padding: 14px;
 }
+
+.select::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  background-color: $titleColor;
+}
+
+.select::-webkit-scrollbar {
+  width: 12px;
+}
+
+.select::-webkit-scrollbar-thumb {
+  background: $mobileBgColor;
+  border-radius: 10px;
+}
+
+.select::-webkit-scrollbar-thumb:hover {
+  background: $titleColor;
+}
+
 .offers-btn {
   width: 290px;
   height: 48px;
