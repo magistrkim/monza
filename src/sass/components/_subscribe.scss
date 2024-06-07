@@ -1,0 +1,87 @@
+.subscribe {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $secondaryBgColor;
+}
+.subscribe-container {
+  @extend .container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 767.98px) {
+    gap: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.subscribe-title {
+  color: $mainBgColor;
+  font-size: 25px;
+  font-weight: 600;
+}
+.subscribe-text {
+  max-width: 500px;
+  color: $mainBgColor;
+  font-size: 15px;
+}
+.subscribe-form {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.subscribe-btn {
+  width: 190px;
+  color: $mainTextColor;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 17px 40px;
+  background-color: $mainBgColor;
+  border: 1px solid $mainBgColor;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 2px solid $mainBgColor;
+    color: $mainBgColor;
+    transition: background-color $transitionTime $transitionCubic,
+      color $transitionTime $transitionCubic,
+      border $transitionTime $transitionCubic;
+  }
+}
+.subscribe-input {
+  width: 500px;
+  color: $mainBgColor;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 17px 17px;
+  background-color: $secondaryBgColor;
+  border: 1px solid $borderColor;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 2px solid $mainBgColor;
+    color: $mainBgColor;
+    transition: background-color $transitionTime $transitionCubic,
+      color $transitionTime $transitionCubic,
+      border $transitionTime $transitionCubic;
+  }
+}
