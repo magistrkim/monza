@@ -9,12 +9,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 
-  @media screen and (max-width: 767.98px) {
-    gap: 40px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1440px) {
     flex-direction: row;
     justify-content: flex-start;
     gap: 20px;
@@ -23,34 +20,51 @@
 .subscribe-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  width: 100%;
+
+  @media screen and (min-width: 1440px) {
+    min-width: 500px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 .subscribe-title {
   color: $mainBgColor;
   font-size: 25px;
   font-weight: 600;
+  @media screen and (max-width: 1439.98px) {
+    text-align: center;
+  }
 }
 .subscribe-text {
-  max-width: 500px;
   color: $mainBgColor;
   font-size: 15px;
+
+  @media screen and (max-width: 1439.98px) {
+    text-align: center;
+  }
 }
 .subscribe-form {
   display: flex;
-  flex-shrink: 1;
-  justify-content: space-between;
-  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
+  @media screen and (min-width: 1440px) {
+    justify-content: flex-start;
+  }
 }
 .subscribe-btn {
-  width: 190px;
+  min-width: 120px;
   color: $mainTextColor;
   font-weight: 500;
   font-size: 15px;
-  padding: 17px 40px;
+  padding: 17px 8px;
   background-color: $mainBgColor;
-  border: 1px solid $mainBgColor;
+  border: 2px solid $mainBgColor;
   border-radius: 15px;
   cursor: pointer;
 
@@ -63,13 +77,17 @@
       color $transitionTime $transitionCubic,
       border $transitionTime $transitionCubic;
   }
+
+  @media screen and (min-width: 480px) {
+    min-width: 190px;
+    padding: 17px 17px;
+  }
 }
 .subscribe-input {
-  width: 500px;
   color: $mainBgColor;
   font-weight: 500;
   font-size: 15px;
-  padding: 17px 17px;
+  padding: 16px 16px;
   background-color: $secondaryBgColor;
   border: 1px solid $borderColor;
   border-radius: 15px;
@@ -84,4 +102,12 @@
       color $transitionTime $transitionCubic,
       border $transitionTime $transitionCubic;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+}
+.subscribe-input::placeholder {
+  color: $secondaryTextColor;
+  font-size: 15px;
 }

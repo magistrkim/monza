@@ -69,7 +69,9 @@
 }
 .hidden {
   display: none;
+  transition: display $transitionTime $transitionCubic;
 }
+
 .quest-btn {
   background: none;
   border: none;
@@ -85,4 +87,6 @@
 
 .quest-text {
   margin: 0 0 20px 0;
+  color: $mainTextColor;
+  font-size: 13px;
 }
