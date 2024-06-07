@@ -6,12 +6,16 @@ questions.forEach(question => {
   const liElement = document.createElement('li');
   liElement.classList.add('quest-item');
   liElement.innerHTML = `
-    <h4 class="quest-subtitle">${question.title}</h4>
-    <p class="quest-text hidden">${question.text}</p>
+  <div  class="quest-wrapper">
+    <h4 class="quest-subtitle">${question.id}. ${question.title}</h4>
     <button class="quest-btn" type="button">
        <span class="plus">+</span><span class="minus hidden">-</span>
     </button>
-    <hr>
+  
+</div>
+<div class="hidden">
+    <p class="quest-text">${question.text}</p>
+</div>
   `;
 
   questionsListEl.appendChild(liElement);
@@ -19,12 +23,14 @@ questions.forEach(question => {
 
 document.querySelectorAll('.quest-btn').forEach(button => {
   button.addEventListener('click', function () {
-    const p = this.previousElementSibling;
+    const textDiv = this.parentElement.nextElementSibling;
     const plus = this.querySelector('.plus');
     const minus = this.querySelector('.minus');
 
-    p.classList.toggle('hidden');
+    textDiv.classList.toggle('hidden');
     plus.classList.toggle('hidden');
     minus.classList.toggle('hidden');
+
+    this.closest('.quest-item').classList.toggle('expanded');
   });
 });
