@@ -11,6 +11,7 @@
   }
 }
 .offers-title {
+  text-transform: uppercase;
   text-align: center;
   font-family: $secondaryFont;
   font-size: 36px;
@@ -27,12 +28,24 @@
     margin-bottom: 80px;
   }
 }
-
 .offers-btn {
   width: 290px;
   height: 48px;
-  border: 1px solid $borderColor;
+  border: 1px solid $accentColor;
   border-radius: 15px;
+  background-color: $accentColor;
+  color: $mainBgColor;
+  font-size: 15px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $accentColor;
+    background-color: transparent;
+    color: $accentColor;
+    transition: border $transitionTime $transitionCubic,
+      color $transitionTime $transitionCubic,
+      background-color $transitionTime $transitionCubic;
+  }
 }
 .car-container {
   display: grid;
