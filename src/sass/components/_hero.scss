@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 680px;
+  height: 100%;
   background-image: url('../assets/images/hero-sm.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,10 +16,10 @@
 .hero-container {
   @extend .container;
   padding-top: 160px;
+  padding-bottom: 150px;
 
   @media screen and (min-width: 768px) {
     padding-top: 190px;
-    padding-bottom: 150px;
   }
 }
 .hero-title {

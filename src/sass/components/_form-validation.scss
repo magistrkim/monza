@@ -1,0 +1,36 @@
+subscribe-input.is-invalid,
+.subscribe-input.is-invalid:focus {
+  border-color: $errorColor;
+}
+
+.subscribe-input.is-valid,
+.subscribe-input.is-valid:focus {
+  border-color: $validColor;
+}
+
+.input-group-append .input-group-text {
+  border-left: 0;
+}
+
+.validation-icon {
+  display: none;
+}
+
+.is-invalid ~ .input-group-append .validation-icon::before {
+  content: '\f00d';
+  color: $errorColor;
+  display: inline-block;
+  font-family: 'FontAwesome';
+}
+
+.is-valid ~ .input-group-append .validation-icon::before {
+  content: '\f00c';
+  color: $validColor;
+  display: inline-block;
+  font-family: 'FontAwesome';
+}
+.subscribe-btn:disabled {
+  border-color: $secondaryTextColor;
+  background-color: $secondaryTextColor;
+  color: $mainTextColor;
+}
