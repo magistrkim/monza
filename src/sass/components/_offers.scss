@@ -1,13 +1,13 @@
 .offer-container {
-  @extend .container;
+  @extend .main-container;
   padding-top: 60px;
   padding-bottom: 80px;
 
   @media screen and (min-width: 768px) {
     padding-top: 80px;
-    @media screen and (min-width: 1140px) {
-      padding-top: 100px;
-    }
+  }
+  @media screen and (min-width: 1140px) {
+    padding-top: 100px;
   }
 }
 .offers-title {
@@ -95,14 +95,4 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-.car-container {
-  display: grid;
-  justify-content: center;
-  gap: 10px;
-}
-.car-wrapper {
-  width: 295;
-  min-height: 370px;
-  background-color: $mainBgColor;
 }

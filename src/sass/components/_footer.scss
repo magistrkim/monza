@@ -4,7 +4,7 @@
   background-color: $secondaryBgColor;
 }
 .footer-container {
-  @extend .container;
+  @extend .main-container;
   display: flex;
   flex-direction: column;
   justify-content: center;

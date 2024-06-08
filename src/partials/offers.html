@@ -57,13 +57,18 @@
       </form>
       <form class="checkbox-form">
         <label for="sort-select" class="sort-label">Sort by</label>
-        <select name="sort-select" id="sort-select" class="sort-select">
+        <select
+          name="sort-select"
+          id="sort-select"
+          class="sort-select"
+          aria-label="Sort select"
+        >
           <option value="">Publication date (ascending)</option>
         </select>
       </form>
     </div>
     <div class="car-container">
-      <ul class="car-wrapper hidden"></ul>
+      <ul class="car-wrapper hidden" data-modal-open></ul>
     </div>
   </div>
 </section>

@@ -17,13 +17,21 @@ const renderCars = cars => {
     const imageWidth = 295;
     const imageHeight = 200;
     const carHTML = `
-      <li>
-        <img src="${imageUrl}" alt="${car.make}" width="${imageWidth}" height="${imageHeight}">
-        <h3>${car.make}</h3>
-        <p>${car.model}</p>
-        <p>${car.year}</p>
-        <span>$${car.price}</span>
-      </li>
+    <li class="car-item">
+        <img src="${imageUrl}" alt="${
+      car.make
+    }" width="${imageWidth}" height="${imageHeight}" class="car-image">
+        <div class="car-title__wrapper">
+            <p class="car-text">${car.year}</p>
+            <h4 class="car-title">${car.make} ${car.model}</h4>
+        </div>
+        <div class="car-text__wrapper">
+            <p class="car-descr">${car.mileage.toLocaleString('en-US')} km</p>
+            <p class="car-descr">${car.transmission}</p>
+            <p class="car-descr">${car.fuelType}</p>
+        </div>
+        <h2 class="car-price">$${car.price.toLocaleString('en-US')}</h2>
+    </li>
     `;
     carWrapper.innerHTML += carHTML;
   });

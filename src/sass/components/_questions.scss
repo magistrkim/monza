@@ -1,5 +1,5 @@
 .quest-container {
-  @extend .container;
+  @extend .main-container;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 80px;
@@ -64,7 +64,7 @@
   color: $accentColor;
 }
 .quest-item.expanded {
-  background-color: #ffffff;
+  background-color: $cardBgColor;
   box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
 .hidden {

@@ -1,0 +1,74 @@
+.car-container {
+  margin-top: 24px;
+}
+.car-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1140px) {
+  }
+}
+.car-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 360px;
+  background-color: $cardBgColor;
+  box-shadow: rgba(176, 176, 176, 0.2) 6px 12px 12px 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .car-title {
+      text-decoration: underline;
+      transition: text-decoration $transitionTime $transitionCubic;
+    }
+  }
+}
+.car-image {
+  width: 295px;
+  height: 200px;
+}
+.car-title__wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px 10px 18px 18px;
+}
+.car-text__wrapper {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 18px;
+}
+.car-text {
+  font-size: 17px;
+  color: $secondaryTextColor;
+  font-family: $secondaryFont;
+}
+.car-title {
+  font-size: 17px;
+}
+.car-descr {
+  font-size: 14px;
+  font-weight: 300;
+  color: $secondaryTextColor;
+  padding-right: 8px;
+  border-right: 1px solid $secondaryTextColor;
+}
+
+.car-descr:last-child {
+  border-right: none;
+}
+.car-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: $mainTextColor;
+  padding: 20px 20px 34px 20px;
+}
