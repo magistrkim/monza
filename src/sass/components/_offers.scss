@@ -88,11 +88,16 @@
   background-color: transparent;
   font-size: 12px;
   color: $secondaryTextColor;
-  background-image: url('../assets/icons/sortAsc.svg');
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    box-shadow: none;
+  }
 }

@@ -1,4 +1,3 @@
-
 export const fetchData = async () => {
   try {
     const res = await fetch('https://freetestapi.com/api/v1/cars');
