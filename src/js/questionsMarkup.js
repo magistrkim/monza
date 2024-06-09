@@ -1,4 +1,4 @@
-import { questions } from '../data/questions';
+import { questions } from '../data/questionsContent.js';
 
 const questionsListEl = document.getElementById('quest-list');
 

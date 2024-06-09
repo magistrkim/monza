@@ -6,5 +6,4 @@ import './questionsMarkup.js';
 import './formValidation.js';
 import './/fetchingCarsMarkup.js';
 import './sortSelectData.js';
-import './filteringCars.js';
-
+import './filteringSortingCars.js';

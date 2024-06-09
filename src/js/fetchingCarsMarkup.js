@@ -1,5 +1,5 @@
 import { fetchData } from './fetchData.js';
-import { defaultImageUrls } from '../data/carsUrl.js';
+import { defaultImageUrls } from '../data/carsImgUrl.js';
 
 const heroButton = document.querySelector('.hero-button');
 const carWrapper = document.querySelector('.car-wrapper');
