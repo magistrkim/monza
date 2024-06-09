@@ -9,7 +9,7 @@ const getRandomImageUrl = () => {
   return defaultImageUrls[randomIndex];
 };
 
-const renderCars = cars => {
+export const renderCars = cars => {
   carWrapper.innerHTML = '';
   cars.forEach(car => {
     const imageUrl = car.imageUrl ? car.imageUrl : getRandomImageUrl();

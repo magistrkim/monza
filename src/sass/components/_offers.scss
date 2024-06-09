@@ -101,3 +101,14 @@
     box-shadow: none;
   }
 }
+.no-cars-message {
+  text-align: center;
+  color: $accentColor;
+  font-family: $secondaryFont;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+.hidden {
+  display: none;
+}
