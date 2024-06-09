@@ -37,6 +37,7 @@ export const renderCars = cars => {
   });
 };
 
+
 heroButton.addEventListener('click', async () => {
   try {
     const data = await fetchData();
