@@ -7,7 +7,7 @@ questions.forEach(question => {
   liElement.classList.add('quest-item');
   liElement.innerHTML = `
   <div  class="quest-wrapper">
-    <h4 class="quest-subtitle">${question.id}. ${question.title}</h4>
+    <h3 class="quest-subtitle">${question.id}. ${question.title}</h3>
     <button class="quest-btn" type="button">
        <span class="plus">+</span><span class="minus hidden">-</span>
     </button>
